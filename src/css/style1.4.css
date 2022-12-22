@@ -1,0 +1,176 @@
+@font-face{
+    font-family: LakeB;
+    src: url('../fonts/TTLakes-Bold.ttf');
+}
+
+@font-face{
+    font-family: Lakes;
+    src: url('../fonts/TTLakes-Regular.ttf');
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+ul li{
+    list-style: none;
+}
+
+li{
+    display: inline;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit; 
+    margin: 5px;
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+}
+
+.logo {
+    height: 50px;
+    width: 96px;
+}
+
+.aside__body{
+    width: 320px;
+    height: 100vh;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__buttonAm{
+    width: 40px;
+    height: 40px;
+    background-color: #FF3E79;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.ul__section-header{
+    display: flex;
+    width: 100%;
+    padding: 23px 23px 57px 0;
+    align-items: center;
+}
+
+.section__list-item:nth-child(1){
+    flex-grow: 0.1;
+}
+
+.section__list-item:nth-child(2){
+    flex-grow: 0.6;
+}
+
+.section__main-list{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.main__list-item:hover:before{
+    content: "";
+    background-color:#41F6D7;
+    width: 3px;
+    height: 32px;
+    position: absolute;
+    left: 0;
+    border-radius: 0 2px 2px 0;
+    transform: translate(0,-5px);
+}
+
+.main__button{
+    font-family: Lakes;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    background: white;
+    font-weight: 600;
+}
+
+.main__button:hover{
+    opacity: 0.5;
+}
+
+.section__footer{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.section-footer__list{
+    display: flex;
+    width: 100%;
+    gap:16px;
+    padding-bottom: 16px;
+    padding-top: 100px;
+}
+
+.email{
+    font-family: Lakes;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-weight: 600;
+    padding-bottom: 12px;
+}
+
+.phone{
+    font-family: LakeB;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    padding-bottom: 40px;
+}
+
+
+.language{
+font-family: Lakes;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: -0.2px;
+font-weight: 600;
+}
+
+.language-button{
+    background-color: white;
+}
+/*
+button:hover,
+a:hover{
+    opacity: 0.5;
+}
+*/
+.section__main{
+    flex-grow: 2;
+}
+
+.aside__body{
+    display: none;
+}
+
+.aside__body-active{
+    display: block;
+    position: absolute;
+    z-index: 100;
+    background: #ffffff;
+}
+
+@media(min-width: 1440px){
+    .aside__body{
+        display: block;
+        position: absolute;
+    }
+}
